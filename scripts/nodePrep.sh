@@ -1,6 +1,6 @@
 #!/bin/bash
 
-echo $(date) " - Starting Script"
+echo $(date) " - Starting Script nodePrep.sh"
 
 # Install EPEL repository
 echo $(date) " - Installing EPEL"
@@ -55,5 +55,5 @@ fi
 systemctl enable docker
 systemctl start docker
 
-echo $(date) " - Script Complete"
+echo $(date) " - Script Complete nodePrep.sh"
 
