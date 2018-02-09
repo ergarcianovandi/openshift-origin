@@ -1,5 +1,5 @@
 #!/bin/bash
-echo $(date) " - Starting Script"
+echo $(date) " - Starting Script masterPrep.sh"
 
 STORAGEACCOUNT=$1
 SUDOUSER=$2
@@ -105,4 +105,4 @@ EOF
 
 fi
 
-echo $(date) " - Script Complete"
+echo $(date) " - Script Complete masterPrep.sh"
