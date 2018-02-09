@@ -22,11 +22,12 @@ yum -y update --exclude=WALinuxAgent
 # Only install Ansible and pyOpenSSL on Master-0 Node
 # python-passlib needed for metrics
 
-if hostname -f|grep -- "-0" >/dev/null
-then
+# Avoid deployment error
+#if hostname -f|grep -- "-0" >/dev/null
+#then
    echo $(date) " - Installing Ansible, pyOpenSSL and python-passlib"
    yum -y --enablerepo=epel install ansible pyOpenSSL python-passlib
-fi
+#fi
 
 # Install java to support metrics
 echo $(date) " - Installing Java"
