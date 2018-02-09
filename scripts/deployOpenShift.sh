@@ -48,7 +48,7 @@ echo $(date) "- Configuring SSH ControlPath to use shorter path name"
 
 runuser -l $SUDOUSER -c "sudo mkdir -p /etc/ansible"
 runuser -l $SUDOUSER -c "sudo chmod 777 /etc/ansible"
-runuser -l $SUDOUSER -c ">> /etc/ansible/ansible.cfg"
+runuser -l $SUDOUSER -c "sudo cat /dev/null > /etc/ansible/ansible.cfg"
 
 sed -i -e "s/^# control_path = %(directory)s\/%%h-%%r/control_path = %(directory)s\/%%h-%%r/" /etc/ansible/ansible.cfg
 sed -i -e "s/^#host_key_checking = False/host_key_checking = False/" /etc/ansible/ansible.cfg
