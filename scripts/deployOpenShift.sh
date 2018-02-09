@@ -1,6 +1,6 @@
 #!/bin/bash
 
-echo $(date) " - Starting Script"
+echo $(date) " - Starting Script deployOpenShift.sh"
 
 set -e
 
@@ -704,4 +704,4 @@ rm /home/${SUDOUSER}/setup-azure-node.yml
 rm /home/${SUDOUSER}/masternonschedulable.yml
 rm /home/${SUDOUSER}/reboot-nodes.yml
 
-echo $(date) " - Script complete"
+echo $(date) " - Script complete deployOpenShift.sh"
